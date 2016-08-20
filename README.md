@@ -10,11 +10,11 @@ Some of the scripts I use on an almost daily basis
 
 ## Scripts
 
-#### git_proxy.sh
+### git_proxy.sh
 
 Run `chmod a+x git_proxy.sh` to make it executable
 
-#### system_proxy.sh
+### system_proxy.sh
 
 Run `chmod a+x system_proxy.sh` to make it executable
 
@@ -24,6 +24,11 @@ To install Dconf, run:
 - `sudo apt-get install dconf-tools` 
 - `sudo apt install dconf-tools` (16.04 and above)
 
+If you get an error saying `touch: cannot touch '/home/<username>/.scripts/toggles/<script>': No such file or directory`
+
+Run the following in your terminal:
+- `mkdir $HOME/.scripts`
+- `mkdir $HOME/.scripts/toggles`
 
 ## Contribution
 
