@@ -6,7 +6,7 @@ Some of the scripts I use on an almost daily basis
 
 - Clone the repo using `git clone https://github.com/kartikarora/scripts`
 - Put `export PATH=$PATH:/path/to/cloned/directory` at the end of your `~/.bashrc`
-- Run `source ~/.bashrc` to load the new `PATH`
+- Run `source ~/.bashrc` to load the new `$PATH`
 
 ## Scripts
 
@@ -29,6 +29,14 @@ If you get an error saying `touch: cannot touch '/home/<username>/.scripts/toggl
 Run the following in your terminal:
 - `mkdir $HOME/.scripts`
 - `mkdir $HOME/.scripts/toggles`
+
+### gitty.py
+
+Run `chmod a+x gitty.py` to make it executable
+
+Requires `requests` to be installed (`pip install requests`)
+
+Run `gitty.py` and you'll get a new commit message everytime with all the files staged and committed
 
 ## Contribution
 
