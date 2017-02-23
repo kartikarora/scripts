@@ -38,13 +38,21 @@ Requires `requests` to be installed (`pip install requests`)
 
 Run `gitty.py` and you'll get a new commit message everytime with all the files staged and committed
 
+### gitcp.sh
+
+`gitcp` stands for `git commit push`
+
+The function adds all files to tracking, commits then and then pushes the commit to remote url.
+
+Add the function to your `.bashrc` to add the function `gitcp` ***OR*** Add the file path to `$PATH` after running `chmod a+x gitcp.sh` to make it executable
+
 ## Contribution
 
 Improvements, suggestions and new scripts are always welcome. Fork, push, submit a Pull Request.
 
 ## LICENCE
 <pre>
-Copyright 2016 Kartik Arora
+Copyright 2017 Kartik Arora
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright 2016 Kartik Arora
+# Copyright 2017 Kartik Arora
 
 #    Licensed under the Apache License, Version 2.0 (the "License");
 #    you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 
 SYSTEM_PROXY_TOGGLE=$HOME/.scripts/toggles/system_proxy_toggle
 
-if [ $# -eq 0 ]; then
+if [[ $# -eq 0 ]]; then
     dconf write /system/proxy/mode "'none'"
     rm -f $SYSTEM_PROXY_TOGGLE
     echo "System proxy unset"

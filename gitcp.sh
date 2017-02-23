@@ -14,14 +14,17 @@
 #    See the License for the specific language governing permissions and
 # limitations under the License.
 
-GIT_PROXY_TOGGLE=$HOME/.scripts/toggles/git_proxy_toggle
-
-if [ $# -eq 0 ]; then
-    git config --global --unset http.proxy
-    rm -f $GIT_PROXY_TOGGLE
-    echo "git proxy unset"
-else
-    git config --global http.proxy "$1"
-    touch $GIT_PROXY_TOGGLE
-    echo "git proxy set to $1" 
-fi
+function gitcp {
+    if [[ $# -eq 0 || $# -eq 1 ]]; then
+        echo "Usage: gitcp <commit_message> <remote> [branch]"
+        echo "    eg gitcp init origin master"
+    else
+        git add --all
+        git commit -m $1
+        if [[ -z "$3" && ! -z "$2" ]]; then
+            git push $2
+        elif [[ ! -z "$3" && ! -z "$2" ]]; then
+            git push $2 $3
+        fi
+    fi
+}
