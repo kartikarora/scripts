@@ -20,11 +20,11 @@ function gitcp {
         echo "    eg gitcp init origin master"
     else
         git add --all
-        git commit -m $1
+        git commit -m "$1"
         if [[ -z "$3" && ! -z "$2" ]]; then
-            git push $2
+            git push "$2"
         elif [[ ! -z "$3" && ! -z "$2" ]]; then
-            git push $2 $3
+            git push "$2" "$3"
         fi
     fi
 }
