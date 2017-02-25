@@ -38,13 +38,17 @@ Requires `requests` to be installed (`pip install requests`)
 
 Run `gitty.py` and you'll get a new commit message everytime with all the files staged and committed
 
-### gitcp.sh
+### git_helpers
 
-`gitcp` stands for `git commit push`
+Contains 3 helper functions for git.
 
-The function adds all files to tracking, commits then and then pushes the commit to remote url.
+**Function Name**|**Stands For**|**Description**
+-----|-----|-----
+`gitc`|`git commit`|This function adds all files to tracking stage and commits them.
+`gitp`|`git push`|This function pushes local repo to remote url.
+`gitcp`|`git commit push`|This function adds all files to tracking stage
 
-Add the function to your `.bashrc` to add the function `gitcp` ***OR*** Add the file path to `$PATH` after running `chmod a+x gitcp.sh` to make it executable
+Copy paste these functions in you `.bashrc` or `.zshrc` file to use them.
 
 ## Contribution
 
