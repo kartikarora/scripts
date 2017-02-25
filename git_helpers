@@ -29,10 +29,10 @@ function gitp {
         echo "Usage: gitp <remote> [branch]"
         echo "    eg gitp origin master"
     else
-        if [[ -z "$3" && ! -z "$2" ]]; then
-            git push "$2"
-        elif [[ ! -z "$3" && ! -z "$2" ]]; then
-            git push "$2" "$3"
+        if [[ -z "$1" && ! -z "$2" ]]; then
+            git push "$1"
+        elif [[ ! -z "$1" && ! -z "$2" ]]; then
+            git push "$1" "$2"
         fi
     fi
 }
