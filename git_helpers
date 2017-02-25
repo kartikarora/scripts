@@ -16,8 +16,8 @@
 
 function gitc {
     if [[ $# -eq 0 ]]; then
-        echo "Usage: gitcp <commit_message>"
-        echo "    eg gitcp init"
+        echo "Usage: gitc <commit_message>"
+        echo "    eg gitc init"
     else
         git add --all
         git commit -m "$1"
