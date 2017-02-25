@@ -15,7 +15,7 @@
 # limitations under the License.
 
 function gitc {
-    if [[ $# -eq 0 || $# -eq 1 ]]; then
+    if [[ $# -eq 0 ]]; then
         echo "Usage: gitcp <commit_message>"
         echo "    eg gitcp init"
     else
@@ -25,7 +25,7 @@ function gitc {
 }
 
 function gitp {
-    if [[ $# -eq 0 || $# -eq 1 ]]; then
+    if [[ $# -eq 0 ]]; then
         echo "Usage: gitp <remote> [branch]"
         echo "    eg gitp origin master"
     else
